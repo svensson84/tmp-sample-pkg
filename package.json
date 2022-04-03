@@ -1,0 +1,34 @@
+{
+  "name": "tmp-sample-pkg",
+  "version": "1.0.1-beta2",
+  "author": "Sven Zaugg",
+  "description": "just for testing purpose",
+  "keywords": [
+    "sample",
+    "test",
+    "temporary"
+  ],
+  "license": "MIT",
+  "main": "./bin/App.js",
+  "exports": "./bin/App.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "start": "npm run build & node bin/App.js",
+    "watch": "webpack --mode development --watch",
+    "check-env": "node -e console.log(process.env)"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "live-server": "^1.1.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.3.5",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
