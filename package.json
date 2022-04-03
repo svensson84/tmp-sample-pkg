@@ -9,6 +9,10 @@
     "temporary"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svensson84/tmp-sample-pkg.git"
+  },
   "main": "./bin/App.js",
   "exports": "./bin/App.js",
   "type": "module",
