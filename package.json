@@ -1,6 +1,6 @@
 {
-  "name": "tmp-sample-pkg",
-  "version": "1.0.2",
+  "name": "@svensson84/tmp-sample-pkg",
+  "version": "1.0.3",
   "author": "Sven Zaugg",
   "description": "just for testing purpose",
   "keywords": [
@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/svensson84/tmp-sample-pkg.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "main": "./bin/App.js",
   "exports": "./bin/App.js",
