@@ -18,7 +18,5 @@ jobs:
         run: npm install && npm run build
       - name: Publish package on NPM 📦
         run: npm publish --respository https://registry.npmjs.org --access public
-        registry-url: 'https://registry.npmjs.org'
-        scope: '@svensson84'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
