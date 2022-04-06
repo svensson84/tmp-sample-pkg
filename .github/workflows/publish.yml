@@ -17,8 +17,6 @@ jobs:
           scope: svensson84
       - name: Install dependencies and build 🔧
         run: npm install && npm run build
-      - name: debug the fuck
-        run: npm config list
       - name: Publish package on NPM 📦
         run: npm publish
         env:
