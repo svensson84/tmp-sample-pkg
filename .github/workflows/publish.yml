@@ -14,12 +14,12 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-          scope: public
+          scope: svensson84
       - name: Install dependencies and build 🔧
         run: npm install && npm run build
       - name: debug the fuck
         run: npm config list
       - name: Publish package on NPM 📦
-        run: npm publish --access public
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
