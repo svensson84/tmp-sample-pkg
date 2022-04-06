@@ -19,7 +19,7 @@ jobs:
       - name: Publish package on NPM 📦
         with:
           registry-url: 'https://registry.npmjs.org'
-          scope: @svensson84
+          scope: '@svensson84'
         run: npm publish --respository https://registry.npmjs.org --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
