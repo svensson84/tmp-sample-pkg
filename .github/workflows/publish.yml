@@ -17,6 +17,6 @@ jobs:
       - name: Install dependencies and build 🔧
         run: npm install && npm run build
       - name: Publish package on NPM 📦
-        run: npm publish --respository=haha --access public
+        run: npm publish --respository @svensson84:https://registry.npmjs.org --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
