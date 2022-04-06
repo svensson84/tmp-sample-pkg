@@ -13,7 +13,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org/svensson84'
+          registry-url: 'https://registry.npmjs.org'
+          scope: "@svensson84"
       - name: Install dependencies and build 🔧
         run: npm install && npm run build
       - name: Publish package on NPM 📦
