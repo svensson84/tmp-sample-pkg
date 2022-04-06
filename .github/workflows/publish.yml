@@ -16,8 +16,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies and build 🔧
         run: npm install && npm run build
-      - name: clean fuckin cache
-        run: npm cache clean --force
+      - name: debug the fuck
+        run: npm config -l
       - name: Publish package on NPM 📦
         run: npm publish --access public
         env:
