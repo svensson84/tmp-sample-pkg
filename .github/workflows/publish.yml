@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies and build 🔧
         run: npm install && npm run build
       - name: clean fuckin cache
-        run: npm clean cache --force
+        run: npm cache clean --force
       - name: Publish package on NPM 📦
         run: npm publish --access public
         env:
